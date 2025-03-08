@@ -47,7 +47,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then, copy the folder id and paste it here
      */
     rootFolder:
-      "55c552513b4bc5a3fd4439ae44ea6b470322ea706bf0ac04bf8d2e2046553cb13aceacc35469b604523878d1a2af1db77938230508488db9ad20e30195;bc9154df4fb551b5b1861ccd",
+      "281d360fe1eeb25f0f9b73105c5b03499fd7eef722f35e70f40bea636648f8d98c370af5aec178f4abff91ecee8a900be59cc7b005ce0ed68a3e37d3ce;e1907d5ca4557999d13cf7ea",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -124,7 +124,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * Default: 100MB
      */
-    streamMaxSize: 104857600,
+    streamMaxSize: 0,
 
     /**
      * Maximum file size that can be downloaded via api routes
@@ -137,7 +137,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * Default: 4MB
      */
-    maxFileSize: 4194304,
+    maxFileSize: 104857600000000000000,
 
     /**
      * Allow user to download protected file without password.
