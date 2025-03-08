@@ -124,7 +124,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * Default: 100MB
      */
-    streamMaxSize: 0,
+    streamMaxSize: 100,
 
     /**
      * Maximum file size that can be downloaded via api routes
@@ -137,7 +137,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * Default: 4MB
      */
-    maxFileSize: 104857600000000000000,
+    maxFileSize: 14000,
 
     /**
      * Allow user to download protected file without password.
@@ -236,8 +236,8 @@ const config: z.input<typeof Schema_Config> = {
          * maxSize: 15MB
          * maxItem: 10 items
          */
-        maxSize: 15 * 1024 * 1024,
-        maxItem: 10,
+        maxSize: 50 * 1024 * 1024,
+        maxItem: 30,
       },
     },
 
