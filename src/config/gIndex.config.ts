@@ -47,7 +47,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then, copy the folder id and paste it here
      */
     rootFolder:
-      "281d360fe1eeb25f0f9b73105c5b03499fd7eef722f35e70f40bea636648f8d98c370af5aec178f4abff91ecee8a900be59cc7b005ce0ed68a3e37d3ce;e1907d5ca4557999d13cf7ea",
+      "09674eaf8ddba6bd8a47d875f21ddfd39afdb28be177f4978fa1c90b640b4b469b3c5246a5a07445b21b442a102f3756534de0902f8c18cc128b65ecb1;3ff1609b6cd07ce8a0dfad61",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -124,7 +124,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * Default: 100MB
      */
-    streamMaxSize: 100,
+    streamMaxSize: 104857600,
 
     /**
      * Maximum file size that can be downloaded via api routes
@@ -137,7 +137,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * Default: 4MB
      */
-    maxFileSize: 14000,
+    maxFileSize: 20971520000,
 
     /**
      * Allow user to download protected file without password.
@@ -172,9 +172,9 @@ const config: z.input<typeof Schema_Config> = {
      *
      * You can set it to undefined if you don't want to use it
      */
-    siteName: "fanqyxls-file-host",
+    siteName: "fanqyxl's-file-host",
     siteNameTemplate: "%s - %t",
-    siteDescription: "a mirror of chromeos, and other random things.",
+    siteDescription: "A simple file host for ChromeOS related things",
     siteIcon: "/logo.svg",
     siteAuthor: "fanqyxl",
     favIcon: "/favicon.png",
@@ -184,7 +184,7 @@ const config: z.input<typeof Schema_Config> = {
      * ref: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#robots
      */
     robots: "noindex, nofollow",
-    twitterHandle: "fanqyxl",
+    twitterHandle: "@fanqyxl",
 
     /**
      * Show file extension on the file name
@@ -236,8 +236,8 @@ const config: z.input<typeof Schema_Config> = {
          * maxSize: 15MB
          * maxItem: 10 items
          */
-        maxSize: 50 * 1024 * 1024,
-        maxItem: 30,
+        maxSize: 15 * 1024 * 1024,
+        maxItem: 10,
       },
     },
 
@@ -253,14 +253,20 @@ const config: z.input<typeof Schema_Config> = {
     navbarItems: [
   {
     "icon": "Link",
-    "name": "website",
+    "name": "E-Z Bio",
     "href": "https://e-z.bio/fanqyxl",
     "external": false
   },
   {
-    "icon": "TvMinimal",
-    "name": "Jellyfin",
-    "href": "https://jellyfin.fanqyxl.net",
+    "icon": "Link2",
+    "name": "Recovery Images",
+    "href": "chrome.fanqyxl.net",
+    "external": false
+  },
+  {
+    "icon": "Mail",
+    "name": "Discord",
+    "href": "https://discord.com/users/889531799691227236",
     "external": false
   }
 ],
@@ -295,7 +301,7 @@ const config: z.input<typeof Schema_Config> = {
      */
     footer: [
   {
-    "value": "{{ poweredBy }}"
+    "value": ""
   },
   {
     "value": "Made with ❤️ by [**{{ author }}**](https://github.com/fanqyxl)"
